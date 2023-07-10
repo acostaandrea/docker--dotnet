@@ -29,9 +29,4 @@ jobs:
           file: ./Dockerfile
           push: true
           tags: ${{ secrets.DOCKERHUB_USERNAME }}/dotnet-docker:latest
-      - name: Deploy to GitHub Pages
-        uses: JamesIves/github-pages-deploy-action@4.1.1
-        with:
-          branch: gh-pages
-          folder: dist/myWebApp
-          token: ${{ secrets.GITHUB_TOKEN }}
+    
